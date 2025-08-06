@@ -12,54 +12,65 @@
 <body>
     <!-- Cabeçalho -->
     <header>
-        <div>
+        <div class="logo">
             <i class="fa-solid fa-bolt"></i>
             <h1>TechStore</h1>
         </div>
 
-        <div>
-            <input type="text" placeholder="Buscar produto...">
+        <div class="search-container">
+            <input type="text" placeholder="Buscar produtos...">
             <i class="fa-solid fa-magnifying-glass"></i>
         </div>
     </header>
 
     <!-- Menu Superior -->
-    <div class="nav-links">
-        <nav>
-            <button>
+    <div class="categories-container">
+        <nav class="categories-bar">
+            <button class="category-btn active">
                 <i class="fa-solid fa-border-all"></i>
+                Todos
             </button>
-            <button>
+
+            <button class="category-btn">
                 <i class="fa-solid fa-mobile-retro"></i>
+                Smartphones
             </button>
-            <button>
+
+            <button class="category-btn">
                 <i class="fa-solid fa-laptop"></i>
+                Notebooks
             </button>
-            <button>
+
+            <button class="category-btn">
                 <i class="fa-solid fa-headphones"></i>
+                Fones de Ouvido
             </button>
-            <button>
+
+            <button class="category-btn">
                 <i class="fa-solid fa-keyboard"></i>
+                Acessórios
             </button>
-            <button>
-                <i class="fa-solid fa-clock"></i> </button>
+
+            <button class="category-btn">
+                <i class="fa-solid fa-clock"></i>
+                SmarthWatches
+            </button>
         </nav>
     </div>
 
     <!-- Hero -->
-    <section class="banner">
+    <section class="hero-section">
         <h2>Black Friday Antecipada</h2>
         <p>Até 50% de desconto em produtos selecionados</p>
     </section>
 
     <!-- Itens -->
-    <main></main>
+    <main class="products-container"></main>
 
     <!-- Rodapé -->
     <footer>
         <p>2026 - TechStore. Todos os Direitos Reservados</p>
     </footer>
-
 
 </body>
 
