@@ -1,3 +1,5 @@
+let textSearch = "";
+let currentCategory = "all";
 let produtos = [
   {
     id: 1,
@@ -90,22 +92,33 @@ let produtos = [
 ];
 
 let productsContainer = document.querySelector(".products-container");
+let input = document.querySelector(".search-input");
+let allButtons = document.querySelectorAll(".category-btn");
 
 function showProducts() {
   let htmlProducts = "";
 
-  produtos.forEach((prd) => {
+  let filteredProducts = produtos.filter((prd) => {
+    let passedCategory =
+      currentCategory === "all" || prd.categoria === currentCategory;
+
+    let prodName = prd.nome.toLowerCase().includes(textSearch.toLowerCase());
+
+    return prodName && passedCategory;
+  });
+
+  filteredProducts.forEach((prd) => {
     htmlProducts =
       htmlProducts +
       `
-     <div class="product-card">
+          <div class="product-card">
                 <img class="product-image" src="${prd.imagem}"
                     alt="${prd.nome}">
                 <div class="product-info">
                     <h3 class="product-name">${prd.nome}</h3>
                     <p class="product-description">${prd.descricao}</p>
                     <p class="product-price">${prd.preco}</p>
-                    <button class="product-button">Comprar</button>
+                    <button class="product-button">Ver detalhes</button>
                 </div>
             </div>
     `;
@@ -114,4 +127,33 @@ function showProducts() {
   productsContainer.innerHTML = htmlProducts;
 }
 
-window.onload = showProducts;
+function search() {
+  textSearch = input.value;
+
+  showProducts();
+}
+
+function changeCategory(category) {
+  currentCategory = category;
+
+  allButtons.forEach((buttons) => {
+    buttons.classList.remove("active");
+    if (buttons.getAttribute("data-category") === category) {
+      buttons.classList.add("active");
+    }
+  });
+  showProducts();
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+  showProducts();
+  input.addEventListener("input", search);
+
+  allButtons.forEach((buttons) => {
+    buttons.addEventListener("click", () => {
+      let category = buttons.getAttribute("data-category");
+
+      changeCategory(category);
+    });
+  });
+});

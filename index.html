@@ -10,7 +10,6 @@
 </head>
 
 <body>
-    <!-- Cabeçalho -->
     <header>
         <div class="logo">
             <i class="fa-solid fa-bolt"></i>
@@ -18,58 +17,54 @@
         </div>
 
         <div class="search-container">
-            <input type="text" placeholder="Buscar produtos...">
+            <input type="text" placeholder="Buscar produtos..." class="search-input">
             <i class="fa-solid fa-magnifying-glass"></i>
         </div>
     </header>
 
-    <!-- Menu Superior -->
     <div class="categories-container">
         <nav class="categories-bar">
-            <button class="category-btn active">
+            <button class="category-btn active" data-category="all">
                 <i class="fa-solid fa-border-all"></i>
                 Todos
             </button>
 
-            <button class="category-btn">
+            <button class="category-btn" data-category="smartphones">
                 <i class="fa-solid fa-mobile-retro"></i>
                 Smartphones
             </button>
 
-            <button class="category-btn">
+            <button class="category-btn" data-category="laptops">
                 <i class="fa-solid fa-laptop"></i>
                 Notebooks
             </button>
 
-            <button class="category-btn">
+            <button class="category-btn" data-category="headphones">
                 <i class="fa-solid fa-headphones"></i>
-                Fones de Ouvido
+                Fone
             </button>
 
-            <button class="category-btn">
+            <button class="category-btn" data-category="accessories">
                 <i class="fa-solid fa-keyboard"></i>
                 Acessórios
             </button>
 
-            <button class="category-btn">
+            <button class="category-btn" data-category="smartwatch">
                 <i class="fa-solid fa-clock"></i>
-                SmarthWatches
+                SmartWatches
             </button>
         </nav>
     </div>
 
-    <!-- Hero -->
     <section class="hero-section">
         <h2>Black Friday Antecipada</h2>
         <p>Até 50% de desconto em produtos selecionados</p>
     </section>
 
-    <!-- Itens -->
     <main class="products">
         <div class="products-container"></div>
     </main>
 
-    <!-- Rodapé -->
     <footer>
         <p>2026 - TechStore. Todos os Direitos Reservados</p>
     </footer>
