@@ -1,18 +1,16 @@
 # TechStore 🛍️
 
-Bem-vindo ao repositório do **TechStore**, uma aplicação de e-commerce moderna e responsiva, desenvolvida para proporcionar a melhor experiência de compra de produtos de tecnologia.
-
-![Versão Mobile](./assets/iPhone-13-PRO.png)
+Bem-vindo ao repositório do **TechStore**, uma aplicação de e-commerce, desenvolvida para proporcionar a melhor experiência de compra de produtos de tecnologia.
 
 ![Demonstração do Projeto TechStore](./assets/Macbook-Air.png)
 
 ## 📜 Sobre o Projeto
 
-O TechStore é uma loja online fictícia, criada como um projeto para demonstrar habilidades em desenvolvimento web. A plataforma apresenta uma interface limpa e intuitiva, com foco em usabilidade e design responsivo, garantindo uma experiência consistente em desktops e dispositivos móveis. O projeto inclui funcionalidades como listagem de produtos, categorias e uma seção de promoções em destaque, como a "Black Friday Antecipada".
+O TechStore é uma loja online fictícia, criada como um projeto para demonstrar habilidades em desenvolvimento web.
+A plataforma apresenta uma interface limpa e intuitiva, com foco em usabilidade e design responsivo, garantindo uma experiência consistente em desktops e dispositivos móveis. O projeto inclui funcionalidades como listagem de produtos, categorias e uma seção de promoções em destaque, como a "Black Friday Antecipada".
 
 ## ✨ Funcionalidades Principais
 
-- **Design Responsivo:** Interface totalmente adaptável para diferentes tamanhos de tela, de smartphones a desktops.
 - **Listagem de Produtos:** Visualização clara dos produtos com imagem, nome, descrição e preço.
 - **Filtragem por Categoria:** Navegação intuitiva através de categorias de produtos como Smartphones, Notebooks, Fones, etc.
 - **Barra de Busca:** Ferramenta de busca para encontrar produtos rapidamente.
