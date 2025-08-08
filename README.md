@@ -2,7 +2,9 @@
 
 Bem-vindo ao repositório do **TechStore**, uma aplicação de e-commerce moderna e responsiva, desenvolvida para proporcionar a melhor experiência de compra de produtos de tecnologia.
 
-![Demonstração do Projeto TechStore](./assets/Macbook-Air.png) ![Versão Mobile](./assets/iPhone-13-PRO.png)
+![Versão Mobile](./assets/iPhone-13-PRO.png)
+
+![Demonstração do Projeto TechStore](./assets/Macbook-Air.png)
 
 ## 📜 Sobre o Projeto
 
